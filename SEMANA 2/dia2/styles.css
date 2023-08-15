@@ -1,0 +1,79 @@
+h1 {
+    color: blue;
+    font-size: 100px;
+  }
+.Utilizando-clase {
+    color: blueviolet;
+    font-size: 60px;
+}
+
+#selector-id {
+    color: green;
+    font-size: 40px;
+}
+
+button {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 1.5s ease;
+}
+button:hover
+{
+    background-color: green;
+   
+}
+
+.Seudoclase-hover:hover {
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;}
+.Seudoclase-link{
+        text-decoration: none;
+    font-size: 25px;    }
+.Seudoclase-link:hover{
+    text-decoration: underline;
+}
+.Seudoclase-link:active {
+    font-size: 18px;
+    color: orange;}
+
+.Seudoclase-link:focus{
+    color: violet;
+    border: 2px dotted  #444;}
+input:focus{background-color:  blue;}
+input:active{background-color:  yellow;}
+        /* hijos seudo */
+.Hijos-seudo p:first-child {background-color: blue;}
+.Hijos-seudo p:last-child {background-color: green;}
+/* para pares: nth-child(2n) */
+/* para impares: nth-child(2n-1) */
+/* para alguna fila en especifico: nth-child (numero de fila) */
+
+.prueba-before::before{content: 'hola'; color: red; font-size: 40px;}
+
+.prueba-after::after{content: 'hola';color: yellow;font-size: 40px;}
+
+.prueba-first-letter::first-letter{font-size: 40px; text-decoration: underline; color: yellow;}
+
+.input1:required{border: 2px solid red}
+.input1:valid{background-color: blue; color: white;}
+
+.lista-padre ul li:nth-child(1){background-color: yellow;}
+/* forma mas recomendada es usar una unica clase */
+.selecciona-este-li{    background-color: blueviolet;}
+
+.container { color: blue;    font-size: 10px;    border: 1px solid green}
+.child {    border: inherit;   font-size: initial;}
+.mi-parrafo {background-color: blueviolet; color: blue;}
+.mi-parrafo {padding: 10px; color: chartreuse;}
+
+
+.Caja-1{background-color: aqua; width: 300px; height: 300px;}
+/* unidades de medida absolutas: son aquellas que no cambian */
+/* unidades de medida relativas: Si van a cambiar ejem: rem, em, vw, vh */
+.Caja-2{background-color: chocolate; width: 50% ; font-size: 30px;} 
+/* width 50%, es del ancho de la pagina */
+.Caja-3{background-color: rebeccapurple; width: 50%;}
+
+

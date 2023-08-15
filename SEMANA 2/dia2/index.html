@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aprendiendo CSS </title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        body {
+            /* background-color: aquamarine; */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <p style="font-size: 50px;">Soy un texto</p> -->
+    <!-- selectores -->
+    <h1>Selector por Elemento</h1>
+    <h3 class="Utilizando-clase">Utilizando el selector por Clase</h3>
+    <p id="selector-id">Selector por ID</p>
+
+<!-- Pseudo clases -->
+
+<h2>Pseudo Clases</h2>
+<button>Enviar con hover</button>
+<p></p>
+<div class="Seudoclase-hover">Este es un div con hover</div><p></p>
+<a class="Seudoclase-link" href="">Este es un link con :hover</a><p></p>
+<input type="text">
+<h2>Hijos</h2>
+<div class="Hijos-seudo"> 
+    <p class="p">Parrafo 1</p>
+    <p class="p">Parrafo 2</p>
+    <p class="p">Parrafo 3</p>
+    <p class="p">Parrafo 4</p>
+    <p class="p">Parrafo 5</p>
+    <p class="p">Parrafo 6</p>
+</div>
+    <!-- seudo elemento -->
+    <h2>::before</h2>
+    <div class="prueba-before">before</div>
+    <h2>::after</h2>
+    <div class="prueba-after">after</div>
+    <h2>first letter</h2>
+    <p class="prueba-first-letter">Hola soy un parrafo</p>
+<!-- pseudoclase de validación -->
+<form>
+    <input class="input1" type="text" placeholder="caja de texto">
+    <input class="input1" type="text" placeholder="caja de texto" required>
+    <input type="submit">
+</form>
+<!-- selectores combinados y multiples -->
+<div class="lista-padre">
+    <ul>
+       <li>item 1</li>
+       <li class="selecciona-este-li">item 2</li>
+       <li>item 3</li>
+       <li>item 4</li> 
+    </ul>
+</div>
+
+<h2>Herencia</h2>
+<div class="container">
+    <p>Parrafo Padre</p>
+    <div class="child">
+    <p>Parrafo hijo</p>
+    </div>
+</div>
+
+<!-- cascada -->
+<h2>Cascada</h2>
+<div class="mi-parrafo">Mi Parrafo</div>
+
+<!-- unidades de medida -->
+<h2>Unidades de Medida</h2>
+<div class="Caja-1">Caja 1</div>
+<div class="Caja-2">Caja 2
+    <div class="Caja-3">Caja 3</div>
+</div>
+
+
+</body>
+</html>
