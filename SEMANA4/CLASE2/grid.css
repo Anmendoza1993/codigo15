@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+}
+/* .container{
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-template-rows: 100px 50px 20px 70px;
+}
+
+.container div{
+    border: solid 1px ;
+} */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header menu menu menu"
+    "hero hero hero hero"
+    "main main empty image"
+    "main main empty extra"
+    "banner banner banner banner";
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: rgb(26, 26, 57);
+  grid-area: header;
+  height: 5vh;
+}
+
+.menu {
+  background-color: rgb(252, 73, 73);
+  grid-area: menu;
+}
+.hero {
+  background-color: skyblue;
+  grid-area: hero;
+  height: 60vh;
+}
+.main {
+  background-color: rgb(26, 26, 57);
+  grid-area: main;
+  height: 25vh;
+}
+.empty {
+  background-color: #fff;
+  grid-area: empty;
+}
+.image {
+  background-color: rgb(201, 255, 25);
+  grid-area: image;
+}
+.extra {
+  background-color: rgb(92, 167, 92);
+  grid-area: extra;
+}
+.banner {
+  background-color: rgb(255, 205, 40);
+  grid-area: banner;
+  height: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "menu"
+      "hero"
+      "main"
+      "banner"
+      "extra"
+      "image"
+      "empty";
+  }
+  .header {
+    height: 5vh;
+  }
+
+  .menu {
+    height: 5vh;
+  }
+  .hero {
+    height: 25vh;
+  }
+  .main {
+    height: 20vh;
+  }
+  .image {
+    height: 15vh;
+  }
+  .extra {
+    height: 15vh;
+  }
+  .banner {
+    height: 15vh;
+  }
+}

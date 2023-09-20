@@ -1,0 +1,44 @@
+/* procurar empezar quitando siempre mg y padding */
+*{
+    margin: 0;
+    padding: 0;}
+body{
+    font-family: outfit; sans-serif
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+background-color: hsl(212, 45%, 89%);}
+
+.box {
+    border-radius: 25px;
+    background-color: white;
+    padding: 15px;
+    width: 40%;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    border-radius: 15px;
+}
+.title{
+    margin-top: 12px;
+    color: hsl(220, 15%, 55%);
+}
+.description{
+    margin-top: 12px;
+    color: hsl(220, 15%, 55%);
+}
+.box div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+

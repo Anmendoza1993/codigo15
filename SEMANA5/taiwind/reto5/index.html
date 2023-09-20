@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main
+      class="bg-[url('./assets/home/background-home-mobile.jpg')] md:bg-[url('./assets/home/background-home-desktop.jpg')] h-screen bg-no-repeat bg-cover p-6"
+    >
+      <nav class="flex justify-between items-center md:mt-10">
+        <img src="./assets/shared/logo.svg" alt="" />
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          alt=""
+          class="md:hidden"
+        />
+        <div
+          class="hidden md:flex py-8 px-24 bg-white/20 blackdrop-blur-sm -mr-6"
+        >
+          <ul class="flex text-white gap-14">
+            <li class="cursor-pointer hover:text-red-500">00 Home</li>
+            <li id="destination" class="cursor-pointer hover:text-red-500">01 Destination</li>
+            <li class="cursor-pointer hover:text-red-500">02 Crew</li>
+            <li class="cursor-pointer hover:text-red-500">03 Technology</li>
+          </ul>
+        </div>
+      </nav>
+      <section
+        class="text-white text-center mt-[40px] uppercase md:flex md:items-center md:h-4/5"
+      >
+        <div class="md:w-1/2 md:text-left">
+          <p class="text-lg">So you want to travel to</p>
+          <h1 class="text-8xl">Space</h1>
+          <p class="normal-case mt-5">
+            Let's face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we'll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <div class="md:m-auto">
+          <div
+            class="mt-20 bg-white h-[150px] w-[150px] m-auto flex justify-center items-center rounded-full md:h-[300px] md:w-[300px]"
+          >
+            <h2 class="text-gray-950 text-xl tracking-wide md:text-5xl">EXPLORE</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js""></script>
+  </body>
+</html>

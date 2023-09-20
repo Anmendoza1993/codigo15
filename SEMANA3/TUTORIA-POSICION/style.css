@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.article{
+    border: solid 1px red;
+    width: 300px;
+    padding: 16px;
+}
+.main{
+    width: 1000px;
+    margin: 32px auto;
+    background-color: greenyellow;
+    display: flex;
+    gap: 16px;
+}
+.anuncio_1{
+    /* Relative, se mueve con respecto a la caja */
+    background-color: violet;
+     position: relative;
+    /* top: 0; */
+    /* right: 0; */
+    left: 50px;
+    bottom: -10px;
+    z-index: 10;
+}
+.anuncio_2{ 
+    /* Absolute: se mueve con respecto a la Pantalla */
+    background-color: chocolate;
+    position: absolute;
+    /* bottom: ; */
+    top: 100px;
+    left: 100;
+    /* right: ; */
+    z-index: 20;
+}
+.header{
+    /* fixed, para fijar vista, asi como excel */
+    background-color: red ;
+    position: fixed;
+    top: 0;
+    /* bottom: 0; */
+    /* right: 25px;
+    left: 25px; */
+    width: 100%;
+    z-index: 30;
+    height: 40px;
+    
+}
+.nav1{
+    /* sticky, para que se quede pegado con el fixed, 
+    es importante la altura que se le coloque,
+    la misma altura del fixed*/
+    background-color: blue;
+    height: 30px;
+    position: sticky;
+    top: 40px;
+}
+
+.nav2{
+    background-color: blueviolet;
+    height: 30px;
+    position: sticky;
+    top: 70px;
+}
+

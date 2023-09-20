@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;}
+body{}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%)
+}
+.div1{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 25px;
+}
+.img1{
+    border-radius: 20px;
+    margin-bottom: 25px;
+    height: 30vh;
+}
+.h1{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 25px;
+    
+}
